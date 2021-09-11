@@ -1,3 +1,5 @@
+//import com.Cliente;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,6 +12,7 @@
  */
 public class TestaMetodo {
     public static void main(String[] args){
+
         Conta contaDoPaulo = new Conta();
         contaDoPaulo.saldo= 500;
 
@@ -25,7 +28,8 @@ public class TestaMetodo {
         System.out.println(conseguiuSacar);
 
         Conta contaDaMaria = new Conta();
-        contaDaMaria.deposita(100);
+
+        
 
         if(contaDaMaria.transfere(300, contaDoPaulo)){
             System.out.println("Transferência realizada com sucesso!");

@@ -14,17 +14,17 @@ public class TestaMetodo {
     public static void main(String[] args){
 
         Conta contaDoPaulo = new Conta();
-        contaDoPaulo.saldo= 500;
+        contaDoPaulo.deposita(100);
 
         contaDoPaulo.deposita(100);
-        System.out.println("paulo"+contaDoPaulo.saldo);
+        System.out.println("paulo"+contaDoPaulo.getSaldo());
         contaDoPaulo.saca(50);
-        System.out.println("paulo"+contaDoPaulo.saldo);
+        System.out.println("paulo"+contaDoPaulo.getSaldo());
         contaDoPaulo.saca(150);
-        System.out.println("paulo"+contaDoPaulo.saldo);
+        System.out.println("paulo"+contaDoPaulo.getSaldo());
 
         boolean conseguiuSacar = contaDoPaulo.saca(501);
-        System.out.println(contaDoPaulo.saldo);
+        System.out.println(contaDoPaulo.getSaldo());
         System.out.println(conseguiuSacar);
 
         Conta contaDaMaria = new Conta();
@@ -38,6 +38,6 @@ public class TestaMetodo {
         }
 
         contaDaMaria.transfere(300, contaDoPaulo);
-        System.out.println(contaDaMaria.saldo);
+        System.out.println(contaDaMaria.getSaldo());
     }
 }

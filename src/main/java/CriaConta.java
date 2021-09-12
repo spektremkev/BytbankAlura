@@ -13,17 +13,17 @@ public class CriaConta {
     public static void main(String[] args) {
         Conta primeiraConta = new Conta();
 
-        primeiraConta.saldo = 200;
-        System.out.println(primeiraConta.saldo);
+        primeiraConta.deposita (300);
+        System.out.println(primeiraConta.getSaldo());
 
-        primeiraConta.saldo += 100;
-        System.out.println(primeiraConta.saldo);
+        primeiraConta.deposita (100);
+        System.out.println(primeiraConta.getSaldo());
 
         Conta segundaConta = new Conta();
-        segundaConta.saldo = 500;
+        segundaConta.deposita (2000);
 
-        System.out.println(primeiraConta.saldo);
-        System.out.println(segundaConta.saldo);
+        System.out.println(primeiraConta.getSaldo());
+        System.out.println(segundaConta.getSaldo());
 
     }
 

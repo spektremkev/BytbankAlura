@@ -1,3 +1,5 @@
+package com.martins.bytbankalura;
+
 //import com.Cliente;
 
 /*
@@ -13,7 +15,7 @@
 public class TestaMetodo {
     public static void main(String[] args){
 
-        Conta contaDoPaulo = new Conta();
+        Conta contaDoPaulo = new Conta(7456,10000);
         contaDoPaulo.deposita(100);
 
         contaDoPaulo.deposita(100);
@@ -27,7 +29,7 @@ public class TestaMetodo {
         System.out.println(contaDoPaulo.getSaldo());
         System.out.println(conseguiuSacar);
 
-        Conta contaDaMaria = new Conta();
+        Conta contaDaMaria = new Conta(1245,789);
 
         
 

@@ -1,4 +1,5 @@
-import com.Cliente;
+package com.martins.bytbankalura;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,6 +17,17 @@ public class Conta {
   private int agencia;
   private int numero;
   private Cliente titular;
+  private static int total = 0;
+
+ 
+  public Conta(int agencia, int numero) {
+    this.agencia = agencia;
+    this.numero = numero;
+    this.saldo = 100;
+    System.out.println("Conta criada com sucesso!");
+  }
+
+  
     
     void deposita(double valor){
         this.saldo = this.saldo + valor;
@@ -52,17 +64,24 @@ public class Conta {
     }
 
     public void setAgencia(int agencia){
-        this.agencia = agencia;
+        if (agencia <= 0){
+            System.out.println ("inválido");
+            return;          
+        }
     }
 
     public int getNumero(){
         return this.numero;
     }
 
-    public void setNumero(int numero){
-        this.numero = numero;
-    }
 
+    public void setNumero(int numero){
+        
+        if (numero <= 0){
+            System.out.println ("inválido");
+        return;
+    }
+}	
     public Cliente getTitular(){
         return this.titular;
     }
@@ -70,6 +89,11 @@ public class Conta {
     public void setTitular(Cliente titular){
         this.titular = titular;
     }
+
+    public static int getTotal(){
+        return Conta.total;
+    }
+    
 }
 
 

@@ -1,4 +1,6 @@
-package com;
+package com.martins.bytbankalura;
+
+
 
 public class Cliente {
     
@@ -6,12 +8,12 @@ public class Cliente {
     private String cpf;
     private String profissao;
 
-    public Cliente(String nome, String cpf, String profissao) {
+  /*  public Cliente(String nome, String cpf, String profissao) {
         this.nome = nome;
         this.cpf = cpf;
         this.profissao = profissao;
     }
-
+*/
     public String getNome() {
         return nome;
     }

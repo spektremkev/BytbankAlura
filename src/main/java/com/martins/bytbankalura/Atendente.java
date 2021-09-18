@@ -16,7 +16,7 @@ public class Atendente extends Funcionario {
     
     public double getBonificacao() {
         System.out.println("BONIFICAÇÃO DO ATENDENTE");
-        return super.getBonificacao() + 100;
+        return getBonificacao() + 100;
         }
 
     }

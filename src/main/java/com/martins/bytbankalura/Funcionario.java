@@ -1,6 +1,6 @@
 package com.martins.bytbankalura;
 
-public class Funcionario {
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
@@ -29,11 +29,10 @@ public class Funcionario {
         this.senha = senha;
     }
     */
-    public double getBonificacao(){
     
-            return this.salario * 0.5;
+    public abstract double getBonificacao();
+    //{ return this.salario * 0.5;    }
 
-    }
 
     public String getNome() {
         return nome;

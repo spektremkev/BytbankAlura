@@ -2,7 +2,8 @@ package com.martins.bytbankalura;
 
 public class TesteFuncionario {
     public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario();
+       // Funcionario funcionario = new Funcionario();
+       Funcionario funcionario = new Gerente();
         Gerente gerente = new Gerente();
 
         funcionario.setNome("Martins");

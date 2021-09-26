@@ -2,8 +2,8 @@ package com.martins.bytbankalura;
 
 public class Gerente extends Funcionario {
 
-    private double salario;
-    private String senha;
+     double salario;
+    private int senha;
     
     //private int senhaTentativas;
     
@@ -12,9 +12,13 @@ public class Gerente extends Funcionario {
         return getBonificacao() + super.getSalario();
     }
 
-    public boolean autenticar(String senha){
-        return this.senha.equals(senha);
-    }
+    public boolean autenticar(int senha2){
+        if (this.senha == senha2) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
     public double getSalario() {
         return salario;
@@ -24,11 +28,11 @@ public class Gerente extends Funcionario {
         this.salario = salario;
     }
 
-    public String getSenha() {
+    public int getSenha() {
         return senha;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(int senha) {
         this.senha = senha;
     }
 }

@@ -23,8 +23,8 @@ public class TesteFuncionario {
         gerente.setSalario(20000);
         gerente.setCargo("Gerente"); 
 
-        gerente.setSenha("1234");
-       boolean autenticado = gerente.autenticar("1234");
+        gerente.setSenha(1234);
+       boolean autenticado = gerente.autenticar(1234);
 
         System.out.println(gerente.toString());
         System.out.println(gerente.getSalario());

@@ -35,6 +35,7 @@ System.out.println("============================================================
 
             Conta cc4 = new ContaCorrente(22, 22);
             lista.add(cc4);
+/*
 
             System.out.println("Tamanho: " + lista.size());
 
@@ -56,11 +57,22 @@ System.out.println("============================================================
             }
 
             System.out.println("----------");
+*/
+
+            boolean contem = lista.contains(cc4);
+            System.out.println("Já existem ?" + contem);
 
             for(Object oRef : lista) {
                 System.out.println(oRef);
             }
+//=============================================================================
+            //criação das contas omitidas
+
+            boolean igual = cc1.ehIgual(cc2);
+            System.out.println(igual); //deve imprimir true
+
+         
+
 
     }
-
 }

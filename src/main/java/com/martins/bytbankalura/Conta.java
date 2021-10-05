@@ -14,7 +14,7 @@ package com.martins.bytbankalura;
 public abstract class Conta {
 
   protected double saldo;
-  private int agencia;
+  int agencia;
   private int numero;
   private Cliente titular;
   private static int total = 0;
@@ -90,7 +90,23 @@ public abstract class Conta {
 
     public static int getTotal(){
         return Conta.total;
+
     }
+
+    
+    public boolean ehIgual(Conta outra){
+
+        if(this.agencia != outra.agencia){
+            return false;
+        }
+    
+        if(this.numero != outra.numero){
+            return false;
+        }
+    
+        return true;
+    }
+    
     
 }
 

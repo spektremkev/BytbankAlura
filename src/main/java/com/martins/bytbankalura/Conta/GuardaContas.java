@@ -1,4 +1,6 @@
-package com.martins.bytbankalura;
+package com.martins.bytbankalura.Conta;
+
+import com.martins.bytbankalura.Conta.*;
 
 public class GuardaContas{
 

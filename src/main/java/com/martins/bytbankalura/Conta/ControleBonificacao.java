@@ -1,5 +1,7 @@
 package com.martins.bytbankalura.Conta;
 
+import com.martins.bytbankalura.Funcionarios.Funcionario;
+
 public class ControleBonificacao {
     private double soma;
 

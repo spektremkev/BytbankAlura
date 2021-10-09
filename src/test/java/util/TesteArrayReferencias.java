@@ -2,9 +2,7 @@ package util;
 
 import java.util.ArrayList;
 
-import com.martins.bytbankalura.Conta;
-import com.martins.bytbankalura.ContaCorrente;
-
+import com.martins.bytbankalura.Conta.*;
 /**
  * @author Martins
  * @since 1.0

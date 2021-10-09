@@ -1,9 +1,15 @@
 package util;
 
-import com.martins.bytbankalura.ContaCorrente;
-import com.martins.bytbankalura.Cliente;
-import com.martins.bytbankalura.ContaPoupanca;
-import com.martins.bytbankalura.Conta;
+import com.martins.bytbankalura.Conta.*;
+import com.martins.bytbankalura.*;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Comparator;
+
+
+
+
 
 public class Teste {
     public static void main(String[] args) {
@@ -49,6 +55,8 @@ public class Teste {
 
         for (Conta conta : lista) {
                 System.out.println(conta);
+                System.out.println("---------");
+                System.out.println(conta + ", " + conta.getTitular().getNome());
         }
 
         lista.sort(comparator);
@@ -57,20 +65,20 @@ public class Teste {
 
 }
 
-class NumeroDaContaComparator implements Comparator<Conta> {
+        class NumeroDaContaComparator implements Comparator<Conta> {
 
-@Override
-public int compare(Conta c1, Conta c2) {
+        @Override
+        public int compare(Conta c1, Conta c2) {
 
-if(c1.getNumero() < c2.getNumero()) {
-    return -1;
-}
+            if(c1.getNumero() < c2.getNumero()) {
+                return -1;
+            }
 
-if(c1.getNumero() > c2.getNumero()) {
-    return 1;
-}
+            if(c1.getNumero() > c2.getNumero()) {
+                return 1;
+            }
 
-return 0;
+        return 0;
 
-}
+        }
 }

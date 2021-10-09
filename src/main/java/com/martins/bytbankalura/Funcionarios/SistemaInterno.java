@@ -1,4 +1,4 @@
-package com.martins.bytbankalura;
+package com.martins.bytbankalura.Funcionarios;
 
 public class SistemaInterno {
     private int senha;

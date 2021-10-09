@@ -1,6 +1,9 @@
-package com.martins.bytbankalura;
+package util;
 
 import java.util.ArrayList;
+
+import com.martins.bytbankalura.Conta;
+import com.martins.bytbankalura.ContaCorrente;
 
 /**
  * @author Martins

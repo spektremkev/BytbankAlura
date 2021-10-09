@@ -1,4 +1,4 @@
-package com.martins.bytbankalura;
+package util;
 
 public class TesteArrayDePrimitivos {
 

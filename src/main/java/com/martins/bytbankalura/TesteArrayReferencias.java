@@ -2,6 +2,14 @@ package com.martins.bytbankalura;
 
 import java.util.ArrayList;
 
+/**
+ * @author Martins
+ * @since 1.0
+ * @version 1.0
+ * 
+ * 
+ */
+
 public class TesteArrayReferencias {
 
     public static void main(String[] args) {

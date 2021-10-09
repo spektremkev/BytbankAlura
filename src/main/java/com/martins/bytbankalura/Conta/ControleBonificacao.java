@@ -1,4 +1,4 @@
-package com.martins.bytbankalura;
+package com.martins.bytbankalura.Conta;
 
 public class ControleBonificacao {
     private double soma;

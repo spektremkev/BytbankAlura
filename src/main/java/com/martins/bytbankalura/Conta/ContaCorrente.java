@@ -1,4 +1,5 @@
-package com.martins.bytbankalura;
+package com.martins.bytbankalura.Conta;
+
 
 public class ContaCorrente extends Conta{
     public ContaCorrente(int agencia, int numero) {

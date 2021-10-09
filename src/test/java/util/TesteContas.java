@@ -1,7 +1,6 @@
 package util;
 
-import com.martins.bytbankalura.ContaCorrente;
-import com.martins.bytbankalura.ContaPoupanca;
+import com.martins.bytbankalura.Conta.*;
 
 public class TesteContas {
     public static void main(String[] args) {

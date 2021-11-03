@@ -1,7 +1,7 @@
 package util;
 
+import com.martins.bytbankalura.Gerente;
 import com.martins.bytbankalura.Funcionarios.Funcionario;
-import com.martins.bytbankalura.Funcionarios.Gerente;
 
 public class TesteFuncionario {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.martins.bytbankalura.Funcionarios;
+package com.martins.bytbankalura;
 
 public class Gerente extends Funcionario {
 

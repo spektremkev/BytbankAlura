@@ -1,4 +1,5 @@
-package com.martins.bytbankalura.Funcionarios;
+
+package com.martins.bytbankalura;
 
 public class Atendente extends Funcionario {
     private String senha;

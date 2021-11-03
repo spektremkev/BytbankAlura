@@ -1,4 +1,4 @@
-package com.martins.bytbankalura.Conta;
+package com.martins.bytbankalura;
 
 import com.martins.bytbankalura.*;
 
